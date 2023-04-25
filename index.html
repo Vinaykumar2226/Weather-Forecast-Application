@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    
+    <link
+    type="text/css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      
+    />
+    <link type="text/css" rel="stylesheet" href="./style.css" />
+
+  
+  </head>
+  <body>
+    <div class="main" align="center">
+      <div class="containerHead card">
+        <p class="tittle">Weather Forecast</p>
+        <img class="tittleimg" src="./assets/sunrise.png">
+        
+      </div>
+    </div>
+    <div class="searchdiv">
+      <input
+        type="text"
+        class="form-control searchbar"
+        placeholder="Enter City name"
+      />
+      <button class="btn btn-primary searchbtn" onclick="searchBtn()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-search"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </button>
+      
+    </div>
+    <div class="error"  >
+      <p class="errormsg">! Enter a Valid City or Check your Network...</p></div>
+    <div class="containertwo">
+      <div class="current card">
+        <h1 class="city">Hyderabad</h1>
+        <img class="icon i1" src="./assets/Sunny.svg" />
+        <p class="temperature1 t1">20 °C</p>
+        <p class="description1 d1">Sunny</p>
+        <div class="humwin">
+          <div class="hum">
+            <img class="imghum" src="./assets/humidity.svg" />
+            <div class="humval">
+              <p class="humidity1 val h1">40%</p>
+
+              <p class="nameval">Humidity</p>
+            </div>
+          </div>
+          <div class="hum">
+            <img class="imghum" src="./assets/wind.svg" />
+            <div class="humval">
+              <p class="wind1 val w1">120kmph</p>
+
+              <p class="nameval">windspeed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="remaining">
+        <div class="oneby3">
+          <div class="card">
+            <div class="day2">
+              <img class="icon2 i2" src="./assets/Sunny.svg" />
+              <div class="day2details">
+                <p class="secondday date2">Tomorrow</p>
+                <p class="temperature2 t2">20 °C</p>
+                <p class="description2 d2">Sunny</p>
+                <div class="day2winhum">
+                  <div class="hum2">
+                    <img class="image2" src="./assets/humidity.svg" />
+                    <p class="humidity2 h2">40%</p>
+                  </div>
+                  <div class="win2">
+                    <img class="image2" src="./assets/wind.svg" />
+                    <p class="humidity2 wind2 w2">120kmph</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end1 -->
+
+          <div class="card">
+            <div class="day2">
+              <img class="icon2 i3" src="./assets/Sunny.svg" />
+              <div class="day2details">
+                <p class="secondday date3">Tomorrow</p>
+                <p class="temperature2 t3">20 °C</p>
+                <p class="description2 d3">Rainy</p>
+                <div class="day2winhum">
+                  <div class="hum2">
+                    <img class="image2" src="./assets/humidity.svg" />
+                    <p class="humidity2 h3">40%</p>
+                  </div>
+                  <div class="win2">
+                    <img class="image2" src="./assets/wind.svg" />
+                    <p class="humidity2 w3">120kmph</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end2 -->
+        <div class="twoby3">
+          <div class="card">
+            <div class="day2">
+              <img class="icon2 i4" src="./assets/Sunny.svg" />
+              <div class="day2details">
+                <p class="secondday date4">Tomorrow</p>
+                <p class="temperature2 t4">20 °C</p>
+                <p class="description2 d4">Sunny</p>
+                <div class="day2winhum">
+                  <div class="hum2">
+                    <img class="image2" src="./assets/humidity.svg" />
+                    <p class="humidity2 h4">40%</p>
+                  </div>
+                  <div class="win2">
+                    <img class="image2" src="./assets/wind.svg" />
+                    <p class="humidity2 w4">120kmph</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end3 -->
+
+          <div class="card">
+            <div class="day2">
+              <img class="icon2 i5" src="./assets/Sunny.svg" />
+              <div class="day2details">
+                <p class="secondday date5">Tomorrow</p>
+                <p class="temperature2 t5">20 °C</p>
+                <p class="description2 d5">Sunny</p>
+                <div class="day2winhum">
+                  <div class="hum2">
+                    <img class="image2" src="./assets/humidity.svg" />
+                    <p class="humidity2 h5">40%</p>
+                  </div>
+                  <div class="win2">
+                    <img class="image2" src="./assets/wind.svg" />
+                    <p class="humidity2 w5">120kmph</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end4 -->
+
+        <div class="threeby3">
+            <div class="card">
+                <div class="day2">
+                  <img class="icon2 i6" src="./assets/Sunny.svg" />
+                  <div class="day2details">
+                    <p class="secondday date6">Tomorrow</p>
+                    <p class="temperature2 t6">20 °C</p>
+                    <p class="description2 d6">Sunny</p>
+                    <div class="day2winhum">
+                      <div class="hum2">
+                        <img class="image2" src="./assets/humidity.svg" />
+                        <p class="humidity2 h6">40%</p>
+                      </div>
+                      <div class="win2">
+                        <img class="image2" src="./assets/wind.svg" />
+                        <p class="humidity2 w6">120kmph</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- end5 -->
+    
+              <div class="card">
+                <div class="day2">
+                  <img class="icon2 i7" src="./assets/Sunny.svg" />
+                  <div class="day2details">
+                    <p class="secondday date7">Tomorrow</p>
+                    <p class="temperature2 t7">20 °C</p>
+                    <p class="description2 d7">Sunny</p>
+                    <div class="day2winhum">
+                      <div class="hum2">
+                        <img class="image2" src="./assets/humidity.svg" />
+                        <p class="humidity2 h7">40%</p>
+                      </div>
+                      <div class="win2">
+                        <img class="image2" src="./assets/wind.svg" />
+                        <p class="humidity2 w7">120kmph</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- end6 -->
+            </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <footer class="foot"><p>Designed and developed by M VINAY KUMAR</p>
+    <div class="cont">
+      <div class="locnt"><a href="https://github.com/Vinaykumar2226">
+      <img class="lgo" src="./assets/github.png"></a></div>
+      <a href="https://www.linkedin.com/in/vinay-kumar-7ba205244/"><div class="locnt"><img class="lgo" src="./assets/linkedin.png"></a></div>
+      <a href="https://instagram.com/__vinni__unofficial__?igshid=ZDdkNTZiNTM="><div class="locnt"><img class="lgo" src="./assets/instagram.png"></a></div>
+    </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
