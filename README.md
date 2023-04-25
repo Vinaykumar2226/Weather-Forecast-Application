@@ -16,6 +16,8 @@
  5.Weather API
 
 
+link for the Weather forecast Application : https://vinaykumar2226.github.io/Weathter-forecast-link/
+
 Sample Video of the project
 https://user-images.githubusercontent.com/113086697/234173507-ca8a64d0-83c4-4886-a6fd-7c55f4cabadb.mp4
 
